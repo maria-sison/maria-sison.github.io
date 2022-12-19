@@ -1,0 +1,588 @@
+/*************************
+DESN 340 Project 4
+Name: Maria Karina Sison 
+**************************/
+/* Stylesheet for Lōtos website 
+
+Colors:
+White - #FFF
+Header and Footer - #8F9179
+Buttons - #8F9179
+Background colour - #F0EFEB
+About background colour - #CFCBBF
+
+*/
+
+/* Visualizing the layout */
+/* This section is for universal selections and rules */
+
+/* box model Fix */
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* image rules */
+
+img {
+	width: 100%;
+}
+
+/* Type Hierarchy */
+
+@font-face {
+    font-family: "PT-Super";
+    src: url("PT_Serif/PTSerif-Bold.ttf");
+}
+
+@font-face {
+	font-family: "PT-Medium";
+	src: url("PT_Serif/PTSerif-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family: "PT-Light";
+	src: url("PT_Serif/PTSerif-Regular.ttf");
+}
+
+body {
+	font-family: "PT-Light";
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #000000;
+}
+
+h1 {
+	font-family: "PT-Light";
+	font-size: 60px;
+	margin: 1;
+}
+
+h2 {
+	font-family: "PT-Light";
+	font-size: 40px;
+	margin: 0;
+}
+
+h3 {
+	font-family: "PT-Light";
+	font-size: 32px;
+	margin: 0;
+}
+
+h4 {
+	font-family: "PT-Light";
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 15px;
+}
+
+h5 {
+	font-family: 'PT-Light';
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+
+p {
+	font-family: 'PT-Light';
+	font-size: 24px;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'PT-Light';
+}
+
+ul {
+	list-style-type: none;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+
+/* Header styles and rules */
+
+header {
+	background-color: #8F9179;
+	color: #fff;
+	position: fixed;
+	height: 90px;
+	z-index: 4;
+	font-size: 0.7em;
+}
+
+.icon {
+	fill:  whitesmoke;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+}
+
+#logo{
+    margin-top: 5px;
+}
+
+/* Hero styles and rules */
+
+#hero {
+	background-image: url("images/hero.jpg");
+	background-size: cover;
+	height: 100vh;
+}
+
+#hero-chunk {
+    text-align: center;
+	width: 600px;
+	color: #000000;
+	margin-top: 400px;
+	margin-left: 750px;
+}
+
+#hero h4 {
+	padding-bottom: 16px;
+}
+
+a.CTA {
+	background-color: #8F9179;
+	font-family: 'PT-Light';
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 0.5em;
+}
+
+/* About section styles and rules */
+
+#about {
+	text-align: center;
+	background-color: #CFCBBF;
+    background-size: cover;
+	height: 50vh;
+}
+
+#about h2 {
+    color: #fff;
+    padding: 50px;
+    font-family: 'PT-Medium';
+	padding-bottom: 20px;
+}
+
+#about p {
+    color: #fff;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+/* Product feature styles and rules */
+#feature{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F0EFEB;
+}
+
+#feature h1{
+    font-family: 'PT-Super';
+    font-size: 32px;
+    color: #6E7E61;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+#product1 {
+	color: #fff;
+	width: 30vw;
+	height: 900px;
+	margin: 0 auto;
+    margin-left:16px;
+	padding: 100px;
+    padding-bottom: 70px;
+	display: grid;
+	grid-template-columns: 470px 670px;
+	column-gap: 30px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: thin;
+	overflow: hidden;
+}
+
+#product1 img{
+	width: 75%;
+    margin-top: -100px;
+    margin-left: -60px;
+}
+
+#product1 h2{
+    color: #6E7E61;
+    font-size: 32px;
+    font-family: 'PT-Medium';
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
+
+#product1 h3{
+    color: #000000;
+    font-size: 20px;
+    margin-left: -86px;
+    width: 28vw;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+#product1 p{
+    color: #000000;
+    font-size: 20px;
+    margin-left: -80px;
+    width: 28vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #7F9431;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -80px;
+}
+
+.out-dot {
+    height: 15px;
+    width: 15px;
+    background-color: #909090;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -80px;
+}
+
+#product1 h5{
+    color: #7F9431;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    margin-left: -55px;
+}
+
+#product1 h4{
+    font-size: 18px;
+    color: #909090;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    margin-left: -55px;
+}
+
+#product2 {
+	color: #fff;
+	width: 30vw;
+	height: 900px;
+    margin: -900px;
+    margin-left: 495px;
+    margin-bottom: 15px;
+	padding: 100px;
+    padding-bottom: 70px;
+	display: grid;
+	grid-template-columns: 470px 670px;
+	column-gap: 30px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: thin;
+	overflow: hidden;
+}
+
+#product2 img{
+	width: 75%;
+    margin-top: -100px;
+    margin-left: -60px;
+}
+
+#product2 h2{
+    color: #6E7E61;
+    font-size: 32px;
+    font-family: 'PT-Medium';
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+
+#product2 h3{
+    color: #000000;
+    font-size: 20px;
+    margin-left: -86px;
+    width: 28vw;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+#product2 p{
+    color: #000000;
+    font-size: 20px;
+    margin-left: -80px;
+    width: 28vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#product2 h5{
+    color: #7F9431;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    margin-left: -55px;
+}
+
+#product2 h4{
+    font-size: 18px;
+    color: #909090;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    margin-left: -55px;
+}
+
+#product3 {
+	color: #fff;
+	width: 30vw;
+	height: 900px;
+    margin: -915px;
+    margin-left: 967px;
+    margin-bottom: 15px;
+	padding: 100px;
+    padding-bottom: 70px;
+	display: grid;
+	grid-template-columns: 470px 670px;
+	column-gap: 30px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: thin;
+	overflow: hidden;
+}
+
+#product3 img{
+	width: 75%;
+    margin-top: -100px;
+    margin-left: -60px;
+}
+
+#product3 h2{
+    color: #6E7E61;
+    font-size: 32px;
+    font-family: 'PT-Medium';
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+
+#product3 h3{
+    color: #000000;
+    font-size: 20px;
+    margin-left: -86px;
+    width: 28vw;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+#product3 p{
+    color: #000000;
+    font-size: 20px;
+    margin-left: -80px;
+    width: 28vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#product3 h5{
+    color: #7F9431;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    margin-left: -55px;
+}
+
+#product3 h4{
+    font-size: 18px;
+    color: #909090;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    margin-left: -55px;
+}
+
+#locationimg {
+	background-image: url("images/location.jpg");
+	background-size: cover;
+	height: 100vh;
+    margin-bottom: 0px;
+}
+
+#locations{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F0EFEB;
+	width: 100%;
+	height: 500px;
+	padding: 300px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: thin;
+	overflow: hidden;
+}
+
+#locations h3{
+    font-family: 'PT-Super';
+    color: #6E7E61;
+    margin-left: -260px;
+    margin-bottom: 20px;
+    margin-top: -270px;
+    font-size: 40px;
+}
+
+#Kingsway h4{
+    font-family: 'PT-Medium';
+    color: #6E7E61;
+    font-size: 24px;
+    margin-left: -260px;
+    width: 28vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#Kingsway p{
+    color: #000000;
+    font-size: 20px;
+    margin-left: -260px;
+    width: 28vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#South h4{
+    font-family: 'PT-Medium';
+    color: #6E7E61;
+    font-size: 24px;
+    margin-left: 270px;
+    width: 28vw;
+    margin-top: -470px;
+    margin-bottom: 0px;
+}
+
+#South p{
+    color: #000000;
+    font-size: 20px;
+    margin-left: 270px;
+    width: 28vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#West h4{
+    font-family: 'PT-Medium';
+    color: #6E7E61;
+    font-size: 24px;
+    margin-left: 750px;
+    width: 28vw;
+    margin-top: -470px;
+    margin-bottom: 0px;
+}
+
+#West p{
+    color: #000000;
+    font-size: 20px;
+    margin-left: 750px;
+    width: 28vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/* Footer styles and rules */
+
+footer {
+	background-color: #8F9179;
+	color: #fff;
+	position: relative;
+	z-index: 4;
+}
+
+footer h4 {
+	padding: 2rem;
+	font-family: "GT-Light";
+}
+
+#foot-links {
+	margin-top: 40px;
+}
+
+#foot-links li:first-child {
+	font-weight: 600;
+	padding-bottom: 30px;
+}
+
+#foot-links ul {
+	display: flex;
+	flex-direction: column;
+}
+
+#foot-links li {
+	text-align: left;
+}
+
+#foot-abo{
+    margin-left: 50px;
+    padding-bottom: 70px;
+}
+
+#foot-links img {
+	max-width: 70px;
+}
+
+#foot-exp{
+    width: 500px;
+}
+
+#Email{
+    font-size: 14px;
+}
+
+
+#socials {
+	display: flex;
+	flex-direction: row;
+}
+
+#legal {
+	text-align: right;
+}
+
+#legal span {
+	margin-left: 30px;
+}
+
+#bottom {
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 40px;
+	color: #fff;
+}

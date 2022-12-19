@@ -1,0 +1,270 @@
+<!------------------------ 
+DESN 340 Project 4
+Name: Maria Karina Sison 
+-------------------------->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The title of the site -->
+    <title>Lōtos</title>
+
+    <!-- The normalize file first to get rid of all the pesky default properties -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+    <!-- Here is the Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Stylesheet that we want to connect to -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+  <!-- ***** Below here starts the code that will show up in the browser ***** -->
+  <body>
+    <!-- Header section (the same for each page in the 53 site) -->
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
+            <h1>Lōtos</h1>
+          </div>
+          <nav class="col-md-7 offset-md-3"> <!-- This is our header navigation bar links section -->
+            <ul>
+                <li><a href=#about><h3>About Us</h3></a></li>
+                <li><a href=#feature><h3>Products</h3></a></li>
+                <li><a href=#locations><h3>Locations</h3></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <div class="container-fluid" id="hero">
+      <div class="container">
+        <div class="row">
+          <section id="hero-chunk">
+            <h4 class="tighten">Nature gave us a lot to work with. So we spent over 30 years formulating it to give you the best plant-based remedies we have to offer.</h4>
+            <a href="#" class="CTA">Shop Now</a>
+          </section>
+        </div>
+      </div> 
+    </div>
+
+    <!-- The part with the mission statement. -->
+    <section class="container-fluid" id="about">
+      <h2 class="tighten">WHO WE ARE</h2>
+      <p>We are makers of scents and we use olfactory compositions to tell compelling stories. Using quality natural ingredients we craft deep aromatic landscapes that allow people to indulge in their own senses. 
+        <br>We reject trends and the pull of the industrial. 
+        <br>Our products are a celebration of plants, the air, and our place in nature. 
+        <br>We are a small Alberta based company but are growing as more people hear about our products. </p>
+    </section>
+
+    <section class="container-fluid" id="feature">
+      <!-- Product 1 section -->
+      <h1>PRODUCTS</h1>
+      <div id="product1">
+        <div class="card-chunk">
+            <img src="images/product1.png">
+            <h2>Peppermint Halo</h2>
+            <h3>Our first-ever product formulated in 1992, Peppermint Halo is highly effective at helping to relieve headaches, providing a cooling, tingling and ‘halo’-like effect when applied topically.</h3>
+            <p>Find in Store:<br></p>
+            <p>Kingsway Mall</p>
+            <span class="dot"></span>
+            <h5 id="in-stock">In stock<br></h5>
+            <p>Southgate Centre</p>
+            <span class="dot"></span>
+            <h5 id="in-stock">In stock<br></h5>
+            <p>West Edmonton Mall</p>
+            <span class="out-dot"></span>
+            <h4>Out of stock<br></h4>
+        </div>
+      </div>
+      <div id="product2">
+        <div class="card-chunk">
+            <img src="images/product2.png">
+            <h2>Reflection</h2>
+            <h3>A cherished blend in support of your mental and emotional wellness, it’s inspired by ancient and sacred oils that are integral to rituals and ceremonies in support of one’s spiritual journey. This blend encourages us to look inward and find stillness as part of our mindfulness practices.</h3>
+            <p>Find in Store:<br></p>
+            <p>Kingsway Mall</p>
+            <span class="dot"></span>
+            <h5>In stock<br></h5>
+            <p>Southgate Centre</p>
+            <span class="out-dot"></span>
+            <h4>Out of stock<br></h4>
+            <p>West Edmonton Mall</p>
+            <span class="dot"></span>
+            <h5>In stock<br></h5>
+        </div>
+      </div>
+      <div id="product3">
+        <div class="card-chunk">
+            <img src="images/product3.png">
+            <h2>Pain Release</h2>
+            <h3>Our first-ever roll-on created in support of topical TLC for sore muscles, body aches, pains and strains. We’ve blended relieving, comforting and fortifying essential oils to help you get back on your feet in no time.</h3>
+            <p>Find in Store:<br></p>
+            <p>Kingsway Mall</p>
+            <span class="dot"></span>
+            <h5>In stock<br></h5>
+            <p>Southgate Centre</p>
+            <span class="dot"></span>
+            <h5>In stock<br></h5>
+            <p>West Edmonton Mall</p>
+            <span class="dot"></span>
+            <h5>In stock<br></h5>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid" id="locationimg"></div>
+
+    <section class="container-fluid" id="feature">
+        <div id="locations">
+            <h3>LOCATIONS</h3>
+            <div id="Kingsway">
+                <h4>Kingsway Mall</h2>
+                <p>Address:
+                <br>1 Kingsway NW #172
+                <br>Edmonton, AB  T5G 3A6 </p>
+                <p>Hours: 
+                <br>Sunday <em>(10am - 6pm)</em>
+                <br>Monday <em>(10am - 8pm)</em>
+                <br>Tuesday <em>(10am - 8pm)</em>
+                <br>Wednesday <em>(10am - 8pm)</em>
+                <br>Thursday <em>(10am - 8pm)</em>
+                <br>Friday <em>(10am - 8pm)</em>
+                <br>Saturday <em>(10am - 5pm)</em>
+                <br>Holiday hours <em>(10am - 5pm)</em>
+                <br>
+                <br>Phone: (780) 484-5235</p>
+            </div>
+            <div id="South">
+                <h4>Southgate Center</h2>
+                <p>Address:
+                <br>5015 111 St NW 
+                <br>Edmonton, AB  T6H 4M6 </p>
+                <p>Hours: 
+                <br>Sunday <em>(10am - 6pm)</em>
+                <br>Monday <em>(10am - 8pm)</em>
+                <br>Tuesday <em>(10am - 8pm)</em>
+                <br>Wednesday <em>(10am - 8pm)</em>
+                <br>Thursday <em>(10am - 8pm)</em>
+                <br>Friday <em>(10am - 8pm)</em>
+                <br>Saturday <em>(10am - 6pm)</em>
+                <br>Holiday hours <em>(10am - 5pm)</em>
+                <br>
+                <br>Phone: (587) 521-2115</p>
+            </div>
+            <div id="West">
+                <h4>West Edmonton Mall</h2>
+                <p>Address:
+                <br>58882 170 St NW #1391
+                <br>Edmonton, AB  T5T 4J2  </p>
+                <p>Hours: 
+                <br>Sunday <em>(11am - 6pm)</em>
+                <br>Monday <em>(10am - 9pm)</em>
+                <br>Tuesday <em>(10am - 9pm)</em>
+                <br>Wednesday <em>(10am - 9pm)</em>
+                <br>Thursday <em>(10am - 9pm)</em>
+                <br>Friday <em>(10am - 9pm)</em>
+                <br>Saturday <em>(9am - 5pm)</em>
+                <br>Holiday hours <em>(10am - 5pm)</em>
+                <br>
+                <br>Phone: (780) 484-5235</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer (the same for each page in the 53 site) ***** -->
+
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row" id="partners">
+        </div>
+
+        <div class="row" id="foot-links">
+          <div class="col-md-3">
+            <h1>Lōtos</h1>
+            <h5>Fragrances and incense</h5>
+          </div>
+          <nav class="col-md-2" id="foot-prod">
+            <h5>10073-82b Avenue Edmonton Alberta
+            <br><br>780-122-1004
+            <br><br>contact@Lotos.ca</h5>
+          </nav>
+          <nav class="col-md-2" id="foot-abo">
+            <ul>
+                <li></li>
+                <li><a href=#about><h5>About Us</h5></a></li>
+                <li><a href=#feature><h5>Products</h5></a></li>
+                <li><a href=#locations><h5>Locations</h5></a></li>
+            </ul>
+          </nav>
+          <nav class="col-md-2" id="foot-exp">
+            <p>Newslettter</p>
+            <h5>Stay informed of our newest trends, arrivals, promotions, and more.</h5>
+            <input type="text" id="Email" name="Email" placeholder="Enter email">
+          </nav>
+        </div>
+
+        <hr style="width:100%;text-align:center;margin:0;color: #fff;">
+        
+        <div class="row" id="bottom">
+          <div class="col-md-3">
+            <ul id="socials">
+              <li id="twitter-icon">
+                <a href="http://www.twitter.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                  </svg>
+                </a></li>
+              <li id="facebook-icon">
+                <a href="http://www.facebook.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                  </svg>
+                </a></li>
+              <li id="insta-icon">
+                <a href="http://www.instagram.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path class="instagram-icon-1" d="M16,4.7a7.8,7.8,0,0,0-.4-1.9,4.6,4.6,0,0,0-.9-1.5A4.6,4.6,0,0,0,13.2.4L11.3,0H4.7L2.8.4a4.6,4.6,0,0,0-1.5.9A4.6,4.6,0,0,0,.4,2.8,7.8,7.8,0,0,0,0,4.7v6.6a7.8,7.8,0,0,0,.4,1.9,4.6,4.6,0,0,0,.9,1.5,4.6,4.6,0,0,0,1.5.9l1.9.4h6.6l1.9-.4a4.6,4.6,0,0,0,1.5-.9,4.6,4.6,0,0,0,.9-1.5,7.8,7.8,0,0,0,.4-1.9V4.7Zm-1.5,6.5a3.8,3.8,0,0,1-.3,1.5,1.5,1.5,0,0,1-.6.9,1.5,1.5,0,0,1-.9.6,3.8,3.8,0,0,1-1.5.3H4.8a3.8,3.8,0,0,1-1.5-.3,1.5,1.5,0,0,1-.9-.6,1.5,1.5,0,0,1-.6-.9,3.8,3.8,0,0,1-.3-1.5A22.1,22.1,0,0,1,1.4,8a22.1,22.1,0,0,1,.1-3.2,3.8,3.8,0,0,1,.3-1.5,1.5,1.5,0,0,1,.6-.9,1.5,1.5,0,0,1,.9-.6,3.8,3.8,0,0,1,1.5-.3h6.4a3.8,3.8,0,0,1,1.5.3,1.5,1.5,0,0,1,.9.6,1.5,1.5,0,0,1,.6.9,3.8,3.8,0,0,1,.3,1.5A22.1,22.1,0,0,1,14.6,8,22.1,22.1,0,0,1,14.5,11.2Z" transform="translate(0 0)"></path>
+                    <path class="instagram-icon-1" d="M8,3.9A4.1,4.1,0,0,0,3.9,8,4.1,4.1,0,0,0,8,12.1,4.1,4.1,0,0,0,12.1,8,4.1,4.1,0,0,0,8,3.9Zm0,6.8A2.7,2.7,0,1,1,10.7,8,2.7,2.7,0,0,1,8,10.7Z" transform="translate(0 0)"></path>
+                    <path class="instagram-icon-1" d="M13.2,3.7a.9.9,0,0,1-.9,1,.9.9,0,0,1-1-1,.9.9,0,0,1,1-.9A.9.9,0,0,1,13.2,3.7Z" transform="translate(0 0)"></path>
+                </a>
+              </li>
+                
+              <li id="youtube-icon">
+                <a href="http://www.youtube.com" target="_blank">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.3">
+                    <title></title>
+                    <path id="Shape" class="youtube-icon-1" d="M23.2,1.4A2.6,2.6,0,0,1,24,2.7a31.7,31.7,0,0,1,.5,5.8,31.7,31.7,0,0,1-.5,5.8,2.2,2.2,0,0,1-.8,1.3,2.6,2.6,0,0,1-1.3.8c-1.9.5-9.4.5-9.4.5s-7.5,0-9.4-.5a2.2,2.2,0,0,1-1.3-.8A2.2,2.2,0,0,1,1,14.3,31.7,31.7,0,0,1,.5,8.5,31.7,31.7,0,0,1,1,2.7a2.6,2.6,0,0,1,.8-1.3A2.2,2.2,0,0,1,3.1.6C5,.1,12.5.1,12.5.1s7.5,0,9.4.5A2.6,2.6,0,0,1,23.2,1.4ZM16.3,8.5,10.1,4.9v7.2Z" transform="translate(-0.5 -0.1)"></path>
+                  </svg>
+                </a>
+              </li>  
+            </ul>
+          </div>
+          <div class="col-md-auto"></div>
+          <div class="col-md-4">
+            <div id="legal">
+              <a href="#">Terms</a>
+              |
+              <a href="#">Privacy</a>
+              <span>&copy2022 Lōtos</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
